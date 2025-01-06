@@ -34,7 +34,7 @@
     <main class="main" id="top">
       <div class="content">
         <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
-          <div class="container-fluid px-0"><a href="/"><img class="navbar-brand w-75 d-md-none" src="assets/img/logos/logo.svg" alt="logo" /></a><a class="navbar-brand fw-bold d-none d-md-block" href="/en/">Quilla</a><a class="btn btn-primary btn-sm ms-md-x1 mt-lg-0 order-md-1 ms-auto" href="#">Get Started Now </a><button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="container-fluid px-0"><a href="/"><img class="navbar-brand w-75 d-md-none" src="assets/img/logos/logo.svg" alt="logo" /></a><a class="navbar-brand fw-bold d-none d-md-block" href="/en/">Quilla</a><a class="btn btn-primary btn-sm ms-md-x1 mt-lg-0 order-md-1 ms-auto" href="https://forms.office.com/r/qFSk42Gfgz">Get Started Now </a><button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-md-end" id="navbar-content" data-navbar-collapse="data-navbar-collapse">
               <ul class="navbar-nav gap-md-2 gap-lg-3 pt-x1 pb-1 pt-md-0 pb-md-0" data-navbar-nav="data-navbar-nav">
                 <li class="nav-item"> <a class="nav-link lh-xl" href="#home">Home</a></li>
@@ -55,7 +55,7 @@
                     <h1 class="fs-2 fs-lg-1 text-white fw-bold mb-2 mb-lg-x1 lh-base mt-3 mt-lg-0">Just Chat,<br>we organize notes</h1>
                     <p class="fs-8 text-white mb-3 mb-lg-4 lh-lg"><span class="fw-bold fs-7">No folders, No tags, No stress</span><br>Stop managing notes, start owning your time. <br>Our AI automatically organizes your thoughts, making them searchable and structured, and ultimately creating the perfect note.<br><span class="fw-bold fs-6">Focus on What Truly Matters.</span></p>
                     <p class="mb-x1 fs-8 button-text text-uppercase fw-bold lh-base text-300">Download our app</p>
-                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 position-relative z-2"><a class="border-0 p-0 bg-transparent cursor-pointer rounded-1" href="#!"> <img class="img-fluid" src="assets/img/logos/App_Store.webp" alt="assets/img/logos/App_Store.webp" /></a><a class="border-0 p-0 bg-transparent cursor-pointer rounded-1" href="#!"> <img class="img-fluid" src="assets/img/logos/Play_Store.webp" alt="assets/img/logos/Play_Store.webp" /></a></div>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 position-relative z-2"><a class="border-0 p-0 bg-transparent cursor-pointer rounded-1" href="https://forms.office.com/r/wCkX3wvPny"> <img class="img-fluid" src="assets/img/logos/App_Store.webp" alt="assets/img/logos/App_Store.webp" /></a><a class="border-0 p-0 bg-transparent cursor-pointer rounded-1" href="https://forms.office.com/r/zsxC2nkQY4"> <img class="img-fluid" src="assets/img/logos/Play_Store.webp" alt="assets/img/logos/Play_Store.webp" /></a></div>
                   </div>
                   <div class="col-lg-6 position-lg-relative">
                     <div class="position-lg-absolute z-1 text-center"><img class="img-fluid chat-image" src="assets/img/Hero/landing_frame.svg" alt="" />
@@ -331,7 +331,7 @@
                           <li class="py-x1 px-1 border-top"> 1 GB Storage </li>
                           <li class="py-x1 px-1 border-top"> Only Text</li>
                           <li class="py-x1 px-1 border-top"> Limited support</li>
-                          <li class="mt-1 d-grid"> <button class="btn btn-secondary btn-lg lh-xl">Get Started Now</button></li>
+                          <li class="mt-1 d-grid"> <button id="pricing_free_tier" class="btn btn-secondary btn-lg lh-xl">Get Started Now</button></li>
                         </ul>
                     </div>
                     <div class="p-x1 text-center bg-white border shadow-sm rounded-2 pricing-card">
@@ -342,7 +342,7 @@
                         <li class="py-x1 px-1 border-top"> 100 GB Storage </li>
                         <li class="py-x1 px-1 border-top"> Text and Image</li>
                         <li class="py-x1 px-1 border-top"> Basic Support </li>
-                        <li class="mt-1 d-grid"> <button class="btn btn-primary btn-lg lh-xl">Get Started Now</button></li>
+                        <li class="mt-1 d-grid"> <button id="pricing_plus_tier" class="btn btn-primary btn-lg lh-xl">Get Started Now</button></li>
                       </ul>
                     </div>
                     <div class=" p-x1 text-center price-card-2 bg-transparent border mb-3 mb-md-0 rounded-2 pricing-card">
@@ -353,7 +353,7 @@
                         <li class="py-x1 px-1 border-top"> Unlimited Storage </li>
                         <li class="py-x1 px-1 border-top"> Text, Image, Audio and Video </li>
                         <li class="py-x1 px-1 border-top"> Premium Support </li>
-                        <li class="mt-1 d-grid"> <button class="btn btn-secondary btn-lg lh-xl">Get Started Now</button></li>
+                        <li class="mt-1 d-grid"> <button id="pricing_standard_tier" class="btn btn-secondary btn-lg lh-xl">Get Started Now</button></li>
                       </ul>
                     </div>
                   </div>
@@ -419,13 +419,13 @@
               <div class="col-6 col-md-3 d-md-flex flex-column align-items-md-end pe-md-0">
                 <div>
                   <p class="mb-2 lh-lg"> Download Our App</p>
-                  <div class="mb-1 mb-lg-2"> <a class="border-0 p-0 bg-transparent cursor-pointer rounded-1" href="#!"> <img class="img-fluid" src="assets/img/logos/App_Store.webp" alt="assets/img/logos/App_Store.webp" /></a></div><a class="border-0 p-0 bg-transparent cursor-pointer rounded-1" href="#!"> <img class="img-fluid" src="assets/img/logos/Play_Store.webp" alt="assets/img/logos/Play_Store.webp" /></a>
+                  <div class="mb-1 mb-lg-2"> <a class="border-0 p-0 bg-transparent cursor-pointer rounded-1" href="https://forms.office.com/r/wCkX3wvPny"> <img class="img-fluid" src="assets/img/logos/App_Store.webp" alt="assets/img/logos/App_Store.webp" /></a></div><a class="border-0 p-0 bg-transparent cursor-pointer rounded-1" href="https://forms.office.com/r/zsxC2nkQY4"> <img class="img-fluid" src="assets/img/logos/Play_Store.webp" alt="assets/img/logos/Play_Store.webp" /></a>
                 </div>
               </div>
             </div>
             <div class="row gy-2 py-3 justify-content-center justify-content-md-between">
               <div class="col-auto ps-0">
-                <p class="text-center text-md-start lh-xl text-1100"> © 2024 Copyright, All Right Reserved, Made by <a class="fw-semi-bold" href="https://themewagon.com/">ThemeWagon </a>❤️</p>
+                <p class="text-center text-md-start lh-xl text-1100"> © 2024 Copyright, All Right Reserved, Made by Epsilon-delta Inc.</p>
               </div>
               <div class="col-auto pe-0"><a class="icons fs-8 me-3 me-md-0 ms-md-3 cursor-pointer" href="#!"><span class="uil uil-twitter"> </span></a><a class="icons fs-8 me-3 me-md-0 ms-md-3 cursor-pointer" href="#!"><span class="uil uil-instagram"></span></a><a class="icons fs-8 me-3 me-md-0 ms-md-3 cursor-pointer" href="#!"><span class="uil uil-linkedin"> </span></a></div>
             </div>
@@ -445,6 +445,31 @@
     <script src="vendors/lodash/lodash.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/theme.js"></script>
+    <script>
+        // if subscribe button is clicked
+        // redirect to https://forms.office.com/r/3q45Txw1qW
+        document.querySelector('button[type="submit"]').addEventListener('click', function() {
+            window.location.href = 'https://forms.office.com/r/3q45Txw1qW';
+        });
+
+        // if pricing free tier button is clicked
+        // redirect to https://forms.office.com/r/1nKHjfdQzs
+        document.getElementById('pricing_free_tier').addEventListener('click', function() {
+            window.location.href = 'https://forms.office.com/r/1nKHjfdQzs';
+        });
+
+        // if pricing plus tier button is clicked
+        // redirect to https://forms.office.com/r/fnNHULmZMV
+        document.getElementById('pricing_plus_tier').addEventListener('click', function() {
+            window.location.href = 'https://forms.office.com/r/fnNHULmZMV';
+        });
+
+        // if pricing standard tier button is clicked
+        // redirect to https://forms.office.com/r/p2ANfUkFJq
+        document.getElementById('pricing_standard_tier').addEventListener('click', function() {
+            window.location.href = 'https://forms.office.com/r/p2ANfUkFJq';
+        });
+    </script>
   </body>
 
 </html>
