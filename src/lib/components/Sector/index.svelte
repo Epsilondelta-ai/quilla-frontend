@@ -7,7 +7,7 @@
 		 * @description If you insert this, you override the default values.
 		 * @default 'bg-cover bg-center bg-no-repeat'
 		 */
-		classes?: string;
+		class?: string;
 		/**
 		 * Should insert image(svg, png, etc...)
 		 * You can create finishes in: https://getwaves.io/
@@ -26,11 +26,12 @@
 		children?: () => any;
 	}
 
-	let { children, classes = 'bg-cover bg-center bg-no-repeat', ...props }: Props = $props();
+	let { children, ...props }: Props = $props();
+	const defaultClass = 'bg-cover bg-center bg-no-repeat';
 </script>
 
 <section
-	class="relative {classes}"
+	class="relative {props.class ?? defaultClass}"
 	style:background-image={props.backgroundImage ? `url(${props.backgroundImage})` : 'none'}
 	style:background-color={props.backgroundColor}
 >

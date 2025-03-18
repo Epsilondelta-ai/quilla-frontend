@@ -7,6 +7,10 @@
 
 	interface Props {
 		/**
+		 * Tailwind classes
+		 */
+		class?: string;
+		/**
 		 * Style 'position' property
 		 * @default 'sticky'
 		 */
@@ -115,7 +119,7 @@
 </script>
 
 <nav
-	class="w-{width}"
+	class={props.class}
 	style="
     position: {position};
     top: {top};
