@@ -128,6 +128,7 @@
     bottom: {bottom};
     z-index: {zIndex};
     width: {width};
+    backdrop-filter: blur(30px);
     {isStaticBackground ? 'background-color: ' + props.backgroundColor + ';' : ''}
     background-blend-mode: lighten;
   "
