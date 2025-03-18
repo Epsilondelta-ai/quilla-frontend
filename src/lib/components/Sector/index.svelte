@@ -2,6 +2,7 @@
 	import EdgeFinish from './EdgeFinish.svelte';
 
 	interface Props {
+		id?: string;
 		/**
 		 * @summary Insert Tailwind classes
 		 * @description If you insert this, you override the default values.
@@ -31,6 +32,7 @@
 </script>
 
 <section
+	id={props.id}
 	class="relative {props.class ?? defaultClass}"
 	style:background-image={props.backgroundImage ? `url(${props.backgroundImage})` : 'none'}
 	style:background-color={props.backgroundColor}
