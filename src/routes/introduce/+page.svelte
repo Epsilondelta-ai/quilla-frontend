@@ -36,14 +36,14 @@
 
 <Sector backgroundImage="/BG.webp" bottomFinishes={['/Wave.svg']}>
 	<SectorContainer
-		class="grid grid-cols-1 items-start gap-[2.5rem] pt-[8rem] sm:gap-[4.5rem] lg:grid-cols-2 lg:gap-[2rem] lg:pt-[12rem]"
+		class="grid grid-cols-1 items-start gap-[2.5rem] pt-[8rem] sm:gap-[4.5rem] lg:grid-cols-2 lg:gap-[2rem] lg:pt-[14rem]"
 	>
-		<div class="h-full text-center text-xl leading-[1.6] text-white lg:text-left">
-			<h2 class="mb-[1.5rem] text-6xl font-bold">
+		<div class="h-full text-center text-xl leading-[1.75] text-white lg:text-left">
+			<h2 class="mb-[1.5rem] text-6xl leading-[1.084] font-bold">
 				Just Chat,<br />we organize notes
 			</h2>
-			<h4 class="text-2xl font-bold">No folders, No tags, No stress</h4>
-			<p>
+			<h4 class="mb-1 text-2xl font-bold">No folders, No tags, No stress</h4>
+			<p class="mb-1">
 				Stop managing notes, start owning your time.<br />Our AI automatically organizes your
 				thoughts, making them searchable and structured, and ultimately creating the perfect note.
 			</p>
