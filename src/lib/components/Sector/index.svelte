@@ -41,9 +41,7 @@
 		<EdgeFinish finishes={props.topFinishes} position="top" />
 	{/if}
 
-	<div class="relative z-2">
-		{@render children?.()}
-	</div>
+	{@render children?.()}
 
 	{#if props.bottomFinishes}
 		<EdgeFinish finishes={props.bottomFinishes} position="bottom" />
