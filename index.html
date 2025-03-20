@@ -14,6 +14,17 @@
 </script>
 <body></body>
 <script>
-    window.location.href = '/en';
+  function redirectToIntroducePage() {
+    const language = navigator.language || navigator.userLanguage;
+
+    if (['ko', 'ko-KR'].includes(language)) {
+      window.location.href = '/introduce/ko';
+      return;
+    }
+
+    window.location.href = '/introduce/en';
+  }
+  
+  redirectToIntroducePage();
 </script>
 </html>
