@@ -16,11 +16,10 @@
 
 <div class="my-2 flex {direction === 'left' ? 'self-start' : 'self-end'}">
 	<div
-		class={`markdown-body relative flex max-w-xs flex-col rounded-lg p-2 text-sm leading-relaxed break-all ${
-			direction === 'left'
-				? 'self-start !bg-gray-200 !text-gray-800'
-				: 'self-end !bg-blue-500 !text-white'
-		}`}
+		class="markdown-body relative flex max-w-58 flex-col rounded-lg p-2 text-xs leading-relaxed break-all sm:max-w-sm md:max-w-md lg:max-w-lg {direction ===
+		'left'
+			? '!ml-[10px] self-start !bg-gray-200 !text-gray-800'
+			: '!mr-[10px] self-end !bg-blue-500 !text-white'}"
 	>
 		{@html marked(content)}
 		<div
