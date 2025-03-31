@@ -10,6 +10,6 @@
 	});
 </script>
 
-<Story name="Inputs">
+<Story name="default">
 	<Input message="" onSendMessage={() => {}} />
 </Story>
