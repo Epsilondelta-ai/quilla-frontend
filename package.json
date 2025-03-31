@@ -52,6 +52,8 @@
 		"vitest": "^3.0.9"
 	},
 	"dependencies": {
-		"marked": "^15.0.7"
+		"@fortawesome/free-solid-svg-icons": "^6.7.2",
+		"marked": "^15.0.7",
+		"svelte-fa": "^4.0.3"
 	}
 }
