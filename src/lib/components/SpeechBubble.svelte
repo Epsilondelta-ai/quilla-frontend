@@ -1,17 +1,10 @@
 <script lang="ts">
-	import { marked } from 'marked';
-
-	// Configure marked options
-	marked.setOptions({
-		breaks: true // Enable line breaks
-	});
-
 	interface Props {
-		content: string;
 		direction: 'left' | 'right';
+		children: any;
 	}
 
-	let { content, direction }: Props = $props();
+	let { direction, children }: Props = $props();
 </script>
 
 <div class="my-2 flex {direction === 'left' ? 'self-start' : 'self-end'}">
@@ -21,7 +14,7 @@
 			? '!ml-[10px] self-start !bg-gray-200 !text-gray-800'
 			: '!mr-[10px] self-end !bg-blue-500 !text-white'}"
 	>
-		{@html marked(content)}
+		{@render children()}
 		<div
 			class={`absolute h-0 w-0 border-solid ${
 				direction === 'left'
