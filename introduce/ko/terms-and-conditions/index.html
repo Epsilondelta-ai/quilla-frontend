@@ -1,72 +1,189 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #333;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service | Quilla</title>
+  <style>
+    :root { --fg:#e6e7e9; --bg:#0b0f14; --muted:#9aa4b2; --card:#121821; --accent:#6ee7b7; }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Apple SD Gothic Neo,Malgun Gothic,sans-serif}
+    .wrap{max-width:860px;margin:48px auto;padding:0 20px}
+    .card{background:var(--card);border:1px solid #1e2835;border-radius:16px;padding:28px 28px}
+    h1{font-size:28px;margin:0 0 8px}
+    h2{font-size:20px;margin:28px 0 8px}
+    h3{font-size:16px;margin:20px 0 6px}
+    p,li{color:#d0d6de}
+    .muted{color:var(--muted)}
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+    .badge{font-size:13px;padding:6px 10px;border-radius:999px;background:#101723;border:1px solid #223043;color:#b7c1ce}
+    .lang{margin-left:auto;display:flex;gap:6px}
+    button{cursor:pointer;background:#141c27;border:1px solid #223043;color:#d9e1ea;padding:8px 12px;border-radius:10px}
+    button.active{outline:2px solid var(--accent);}
+    a{color:#9ff7d6}
+    .foot{margin-top:28px;padding-top:18px;border-top:1px dashed #293548;color:#aeb7c2;font-size:14px}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+  </style>
 </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXGDHP039P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-  gtag('config', 'G-BXGDHP039P');
-</script>
 <body>
-    <h1>이용 약관</h1>
-    <p>
-        &lt;주식회사 엡실론델타&gt;는 신뢰를 바탕으로 Quilla 서비스를 운영하며, 공정하고 투명한 사용자 경험을 제공합니다. Quilla 사용에 대한 이용 약관은 다음과 같습니다.
-    </p>
-    
-    <section>
-        <h2>서비스 사용</h2>
+  <div class="wrap">
+    <div class="row">
+      <div class="badge">Quilla</div>
+      <div class="muted">Terms of Service / 서비스 약관</div>
+      <div class="lang">
+        <button id="btn-ko2" class="active" aria-pressed="true">한국어</button>
+        <button id="btn-en2" aria-pressed="false">English</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- English -->
+      <div data-lang="en2">
+        <h1>Terms of Service</h1>
+        <p class="muted">Effective date: <span class="mono">EFFECTIVE_DATE</span></p>
+        <p>
+          These Terms govern your access to and use of the <strong>Quilla ("Quilla")</strong> provided by <strong>Epsilondelta Inc.</strong> ("we"). By creating an account or using the Service, you agree to be bound by these Terms.
+        </p>
+
+        <h2>1. Accounts & Eligibility</h2>
         <ul>
-            <li>Quilla는 사용자 입력을 기반으로 자동화된 노트 정리, 저장 및 검색 서비스를 제공합니다.</li>
-            <li>사용자는 부적절한 콘텐츠를 업로드하거나 다른 사람의 권리를 침해하는 활동에 참여해서는 안 됩니다.</li>
+          <li>You must be legally able to form a contract and be the minimum age required by local law.</li>
+          <li>You are responsible for safeguarding your account credentials and for all activities under your account.</li>
         </ul>
-    </section>
-    
-    <section>
-        <h2>계정 및 보안</h2>
+
+        <h2>2. Acceptable Use</h2>
+        <ul>
+          <li>Do not misuse the Service or interfere with its normal operation.</li>
+          <li>Do not upload unlawful content or content that infringes intellectual property, privacy, or other rights.</li>
+          <li>No reverse engineering, unauthorized scraping, or circumventing of technical measures.</li>
+        </ul>
+
+        <h2>3. User Content</h2>
+        <p>You retain ownership of your content. You grant us a worldwide, non‑exclusive, royalty‑free license to host, process, and display your content solely to operate and improve the Service.</p>
+
+        <h2>4. AI Features & Disclaimers</h2>
+        <ul>
+          <li>AI outputs may be inaccurate or incomplete. You are responsible for reviewing outputs before relying on them.</li>
+          <li>We may use anonymized and aggregated usage data to improve models and features. See the Privacy Policy for details.</li>
+        </ul>
+
+        <h2>5. Third‑Party Services (incl. Google OAuth)</h2>
         <p>
-            사용자는 계정을 만들 때 정확한 정보를 제공해야 하며 계정 보안을 유지할 책임이 있습니다.
+          The Service may integrate with third‑party services (e.g., Google). Your use of such integrations is subject to the third party’s terms and policies. If you connect your Google account, you authorize access to the scopes you approve; you can revoke access at any time via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Security Permissions</a>.
         </p>
-    </section>
-    
-    <section>
-        <h2>지적 재산권</h2>
+
+        <h2>6. Plans, Fees, and Taxes</h2>
+        <p>We may offer free and paid plans. Fees, billing cycles, and refund policies (if any) will be presented at purchase. You are responsible for applicable taxes. We may change prices with reasonable prior notice.</p>
+
+        <h2>7. Termination</h2>
+        <p>Either party may terminate at any time. Upon termination, your right to use the Service ceases. We may retain and/or delete content according to our Privacy Policy and retention practices.</p>
+
+        <h2>8. Intellectual Property</h2>
+        <p>The Service, including trademarks, logos, and software, is owned by us or our licensors and is protected by applicable laws. No rights are granted except as expressly stated.</p>
+
+        <h2>9. Warranties & Liability</h2>
+        <p>The Service is provided “as is” without warranties. To the maximum extent permitted by law, we disclaim implied warranties and limit liability for indirect or consequential damages.</p>
+
+        <h2>10. Indemnity</h2>
+        <p>You agree to indemnify and hold us harmless from claims arising out of your use of the Service or violation of these Terms.</p>
+
+        <h2>11. Governing Law & Dispute Resolution</h2>
+        <p>These Terms are governed by the laws of Republic of Korea law, without regard to conflict of laws. Any disputes will be resolved by the court having jurisdiction over the location of our head office, unless otherwise required by law.</p>
+
+        <h2>12. Changes to the Service or Terms</h2>
+        <p>We may modify the Service or these Terms. If changes are material, we will provide reasonable notice. Continued use after changes constitutes acceptance.</p>
+
+        <h2>13. Contact</h2>
         <p>
-            Quilla에서 제공하는 모든 콘텐츠와 기술은 Epsilon-delta Inc.의 소유이며 사전 동의 없이 복제, 배포 또는 수정할 수 없습니다.
+          <strong>Epsilondelta Inc.</strong><br/>
+          Email: <a href="mailto:CONTACT_EMAIL">contact@epsilondelta.ai</a>
         </p>
-    </section>
-    
-    <section>
-        <h2>책임의 한계</h2>
+      </div>
+
+      <!-- Korean -->
+      <div data-lang="ko2" hidden>
+        <h1>서비스 약관</h1>
+        <p class="muted">시행일자: <span class="mono">EFFECTIVE_DATE</span></p>
         <p>
-            회사는 자연 재해나 시스템 장애와 같은 불가항력 사건으로 인한 데이터 손실에 대해 책임을 지지 않습니다.
+          본 약관은 <strong>주식회사 엡실론델타</strong>(이하 "회사")가 제공하는 <strong>Quilla ("Quilla")</strong> 서비스의 이용에 적용됩니다. 계정을 생성하거나 서비스를 이용하면 본 약관에 동의한 것으로 간주됩니다.
         </p>
-    </section>
-    
-    <section>
-        <h2>약관의 수정</h2>
+
+        <h2>1. 계정 및 자격</h2>
+        <ul>
+          <li>이용자는 해당 지역의 법령상 계약 체결 능력이 있어야 합니다.</li>
+          <li>계정 자격증명의 관리 책임은 이용자에게 있으며, 계정으로 발생하는 모든 활동에 책임을 집니다.</li>
+        </ul>
+
+        <h2>2. 허용 이용범위</h2>
+        <ul>
+          <li>서비스의 정상적인 운영을 방해하거나 오용하지 않습니다.</li>
+          <li>위법·권리침해·개인정보 침해 콘텐츠를 업로드하지 않습니다.</li>
+          <li>역설계, 무단 스크래핑, 기술적 보호조치 우회를 금지합니다.</li>
+        </ul>
+
+        <h2>3. 이용자 콘텐츠</h2>
+        <p>이용자는 자신의 콘텐츠에 대한 소유권을 유지합니다. 회사는 서비스 운영·개선을 위해 필요한 범위에서 전세계적·비독점적·로열티무료 라이선스를 부여받습니다.</p>
+
+        <h2>4. AI 기능 및 고지</h2>
+        <ul>
+          <li>AI 출력물은 부정확하거나 불완전할 수 있습니다. 의존 전에 반드시 검토해야 합니다.</li>
+          <li>모델/기능 개선을 위해 비식별·집계 형태의 이용 데이터를 활용할 수 있습니다. 자세한 내용은 개인정보 처리방침을 참조해 주세요.</li>
+        </ul>
+
+        <h2>5. 제3자 서비스( Google OAuth 포함 )</h2>
         <p>
-            이러한 약관은 필요에 따라 업데이트될 수 있으며, 사용자는 사전에 변경 사항을 통지받습니다.
+          서비스는 제3자 서비스와 연동될 수 있으며, 해당 서비스 약관/정책이 적용됩니다. Google 계정 연동 시 이용자가 승인한 범위에 한해 접근이 이뤄지며, <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google 보안 권한</a>에서 언제든지 철회할 수 있습니다.
         </p>
-    </section>
+
+        <h2>6. 요금제 및 세금</h2>
+        <p>무료 및 유료 요금제를 제공할 수 있습니다. 요금, 청구 주기, 환불 정책(있을 경우)은 구매 시 고지됩니다. 적용 세금은 이용자 부담이며, 요금은 사전 통지 후 변경될 수 있습니다.</p>
+
+        <h2>7. 해지</h2>
+        <p>당사자 일방은 언제든지 해지할 수 있습니다. 해지 시 서비스 이용 권한은 종료되며, 개인정보 처리방침 및 보관 정책에 따라 콘텐츠가 보존/삭제될 수 있습니다.</p>
+
+        <h2>8. 지식재산권</h2>
+        <p>상표, 로고, 소프트웨어를 포함한 서비스는 회사 또는 라이선서의 소유이며, 본 약관에서 명시적으로 허용된 경우를 제외하고 권리가 부여되지 않습니다.</p>
+
+        <h2>9. 보증의 부인 및 책임 제한</h2>
+        <p>서비스는 “있는 그대로” 제공됩니다. 관련 법률이 허용하는 범위 내에서 묵시적 보증을 부인하며, 간접·결과적 손해에 대한 책임을 제한합니다.</p>
+
+        <h2>10. 면책</h2>
+        <p>이용자의 서비스 사용 또는 본 약관 위반으로 발생하는 청구로부터 회사를 면책하고 보호할 것에 동의합니다.</p>
+
+        <h2>11. 준거법 및 분쟁해결</h2>
+        <p>본 약관은 대한민국의 법률에 따르며, 충돌법 규정을 적용하지 않습니다. 분쟁은 회사의 본점소재지의 관할 법원에서 해결합니다(강행규정 제외).</p>
+
+        <h2>12. 서비스/약관 변경</h2>
+        <p>회사는 서비스 또는 본 약관을 변경할 수 있으며, 중요한 변경 시 합리적인 사전 통지를 제공합니다. 변경 후 서비스 이용은 변경에 대한 동의로 간주됩니다.</p>
+
+        <h2>13. 연락처</h2>
+        <p>
+          <strong>주식회사 엡실론델타</strong><br/>
+          이메일: <a href="mailto:CONTACT_EMAIL">contact@epsilondelta.ai</a>
+        </p>
+      </div>
+
+      <div class="foot">
+        <div>© <span class="mono">YEAR</span> Epsilondelta Inc.. All rights reserved.</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const en2 = document.querySelector('[data-lang="en2"]');
+    const ko2 = document.querySelector('[data-lang="ko2"]');
+    const btnEn2 = document.getElementById('btn-en2');
+    const btnKo2 = document.getElementById('btn-ko2');
+    function setLang2(lang){
+      const isEn = lang==='en';
+      en2.hidden = !isEn; ko2.hidden = isEn;
+      btnEn2.classList.toggle('active', isEn);
+      btnKo2.classList.toggle('active', !isEn);
+      btnEn2.setAttribute('aria-pressed', String(isEn));
+      btnKo2.setAttribute('aria-pressed', String(!isEn));
+      document.documentElement.lang = isEn ? 'en' : 'ko';
+    }
+    btnEn2.onclick=()=>setLang2('en');
+    btnKo2.onclick=()=>setLang2('ko');
+  </script>
 </body>
 </html>
