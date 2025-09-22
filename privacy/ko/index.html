@@ -200,6 +200,7 @@
     const ko = document.querySelector('[data-lang="ko"]');
     const btnEn = document.getElementById('btn-en');
     const btnKo = document.getElementById('btn-ko');
+    
     function setLang(lang){
       const isEn = lang==='en';
       en.hidden = !isEn; ko.hidden = isEn;
@@ -211,6 +212,7 @@
     }
     btnEn.onclick=()=>setLang('en');
     btnKo.onclick=()=>setLang('ko');
+    setLang('ko');
   </script>
 </body>
 </html>
